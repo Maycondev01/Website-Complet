@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,800;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4ad8e2c939.js"></script>
+
+    <title>Designer Web Universitário</title>
+</head>
+
+<!------Cabeçalho------->
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="./imagens/logo.png">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./index.html">Início</a></li>
+                    <li><a href="./about.html">Sobre</a></li>
+                    <li><a href="./course.html">Curso</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contato</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contate-nos</h1>
+    </section>
+
+    <!-----CONTATE-NOS----->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.0020045940273!2d-34.932053384632916!3d-8.101276183278662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1e8cc2e8c705%3A0x7ccf95114a980837!2sR.%20Etapas%2C%2010%20-%20Ca%C3%A7ote%2C%20Recife%20-%20PE%2C%2050875-050!5e0!3m2!1spt-BR!2sbr!4v1661790580379!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Universidade Pernambuco, Unifpe</h5>
+                        <p>Recife, Areias</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+55 81997721518</h5>
+                        <p>Segunda a Sábado, Das 10h às 18h</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>mayconlundgren186@gmail.com</h5>
+                        <p>Envie-nos a sua consulta</p>
+                    </span>
+                </div>
+            </div>
+<div class="contact-col">
+
+    <form action="./form-handler.php" method="POST">
+        <input type="text" name="nome" placeholder="Insira seu nome" required>
+        <input type="email" name="email" placeholder="Insira O Endereço De E-mail" required>
+        <textarea rows="8" name="mensagem" placeholder="Mensagem" required></textarea>
+        <button type="submit" class="hero-btn red-btn">Enviar Mensagem</button>
+    </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-----Footer----->
+    <section class="footer">
+        <h4>Sobre Nós</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque aliquet turpis nulla, eleifend faucibus est
+            sollicitudin ut.</br> Maecenas ut venenatis ex, et dapibus purus
+            Donec sit.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/maicom.douglas.315/" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/mayconlundgren/" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5581997721518&text=Eu%20gostaria%20de%20fazer%20um%20orçamento.%20"
+                target="_blank">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/maycon-douglas-8bb1a61a2/" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>
+        <p>Feito com <i class="fa fa-heart-o"></i> por Maycon Douglas</p>
+    </section>
+
+    <!----Javascript para Alternar Menu---->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
